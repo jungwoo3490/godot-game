@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cmamvdoikbyjh"]
 
 [ext_resource type="FontFile" uid="uid://cliya40vbhxlg" path="res://assets/Fonts/DOSPilgi.ttf" id="1_05wk3"]
+[ext_resource type="Script" uid="uid://c2r1vtboa1fyw" path="res://scenes/title/title_screen.gd" id="1_8xedo"]
 [ext_resource type="Texture2D" uid="uid://b7qrewyos0oyt" path="res://assets/Characters/Ninja Frog/Jump (32x32).png" id="2_ynr0n"]
 [ext_resource type="PackedScene" uid="uid://dx5evsql6fvyi" path="res://scenes/background/background.tscn" id="3_iowo3"]
 [ext_resource type="Texture2D" uid="uid://bxklyl6xytbcw" path="res://assets/Backgrounds/Brown.png" id="4_qrms8"]
@@ -22,6 +23,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8xedo")
 
 [node name="TitleLabel" type="Label" parent="." unique_id=267516828]
 layout_mode = 1
@@ -64,3 +66,5 @@ texture = ExtResource("2_ynr0n")
 [node name="Background" parent="." unique_id=402737428 instance=ExtResource("3_iowo3")]
 background_image = ExtResource("4_qrms8")
 scroll_speed_x = -10
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
