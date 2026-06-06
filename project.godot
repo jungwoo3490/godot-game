@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="mariolike"
+config/name="frog_adventure"
 run/main_scene="uid://cmamvdoikbyjh"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"

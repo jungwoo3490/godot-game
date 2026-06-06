@@ -1,9 +1,14 @@
 [gd_scene format=3 uid="uid://elgpd72ujnj1"]
 
 [ext_resource type="Texture2D" uid="uid://c4fgdcy44wjlp" path="res://icon.svg" id="1_cfjva"]
+[ext_resource type="PackedScene" uid="uid://5nmhvhkwjfka" path="res://characters/character.tscn" id="2_2lb6k"]
 
 [node name="Level1" type="Node2D" unique_id=525704191]
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=1988578922]
 position = Vector2(630, 354)
 texture = ExtResource("1_cfjva")
+
+[node name="Character" parent="." unique_id=785410137 instance=ExtResource("2_2lb6k")]
+position = Vector2(630, 290)
+scale = Vector2(4, 4)
