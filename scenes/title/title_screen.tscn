@@ -2,6 +2,8 @@
 
 [ext_resource type="FontFile" uid="uid://cliya40vbhxlg" path="res://assets/Fonts/DOSPilgi.ttf" id="1_05wk3"]
 [ext_resource type="Texture2D" uid="uid://b7qrewyos0oyt" path="res://assets/Characters/Ninja Frog/Jump (32x32).png" id="2_ynr0n"]
+[ext_resource type="PackedScene" uid="uid://dx5evsql6fvyi" path="res://scenes/background/background.tscn" id="3_iowo3"]
+[ext_resource type="Texture2D" uid="uid://bxklyl6xytbcw" path="res://assets/Backgrounds/Brown.png" id="4_qrms8"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ynr0n"]
 font = ExtResource("1_05wk3")
@@ -58,3 +60,7 @@ text = "게임 시작"
 position = Vector2(349.74997, 514.25)
 scale = Vector2(6.9531255, 6.9531255)
 texture = ExtResource("2_ynr0n")
+
+[node name="Background" parent="." unique_id=402737428 instance=ExtResource("3_iowo3")]
+background_image = ExtResource("4_qrms8")
+scroll_speed_x = -10

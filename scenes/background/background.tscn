@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dx5evsql6fvyi"]
+
+[ext_resource type="Script" uid="uid://db8rp4k7g02f4" path="res://scenes/background/background.gd" id="1_pesyb"]
+[ext_resource type="Texture2D" uid="uid://bvtiyrshyhxrr" path="res://assets/Backgrounds/Gray.png" id="2_rsf5d"]
+
+[node name="Background" type="ParallaxBackground" unique_id=402737428]
+script = ExtResource("1_pesyb")
+background_image = ExtResource("2_rsf5d")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="." unique_id=97968135]
+texture_repeat = 2
+motion_mirroring = Vector2(1024, 1024)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer" unique_id=1930044345]
+scale = Vector2(4, 4)
+texture = ExtResource("2_rsf5d")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 256)
