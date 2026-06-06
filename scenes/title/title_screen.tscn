@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cmamvdoikbyjh"]
+
+[ext_resource type="FontFile" uid="uid://cliya40vbhxlg" path="res://assets/Fonts/DOSPilgi.ttf" id="1_05wk3"]
+[ext_resource type="Texture2D" uid="uid://b7qrewyos0oyt" path="res://assets/Characters/Ninja Frog/Jump (32x32).png" id="2_ynr0n"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ynr0n"]
+font = ExtResource("1_05wk3")
+font_size = 100
+font_color = Color(0.4862745, 0.8117647, 0.49803922, 1)
+outline_size = 5
+outline_color = Color(1, 0.58431375, 1, 1)
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 0.75686276)
+shadow_offset = Vector2(3, 3)
+
+[node name="TitleScreen" type="Control" unique_id=1876771820]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="." unique_id=267516828]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -398.0
+offset_top = -237.0
+offset_right = 402.0
+offset_bottom = -136.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "개구리 섬의 비밀"
+label_settings = SubResource("LabelSettings_ynr0n")
+
+[node name="StartButton" type="Button" parent="." unique_id=245765880]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -494.0
+offset_top = -234.0
+offset_right = -179.0
+offset_bottom = -107.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_05wk3")
+theme_override_font_sizes/font_size = 50
+text = "게임 시작"
+
+[node name="FrogImage" type="Sprite2D" parent="." unique_id=172024033]
+position = Vector2(349.74997, 514.25)
+scale = Vector2(6.9531255, 6.9531255)
+texture = ExtResource("2_ynr0n")
